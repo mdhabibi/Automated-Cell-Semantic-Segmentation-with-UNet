@@ -15,23 +15,24 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 
-def display_random_sample(X_train, Y_train):
-    """
-    Display a random sample from the dataset, including the original image and its corresponding mask.
-    
-    Parameters:
-    - X_train (ndarray): Array of training images.
-    - Y_train (ndarray): Array of corresponding mask images.
-    """
-    idx = random.randint(0, len(X_train) - 1)
-    fig, ax = plt.subplots(1, 2, figsize=(12, 6))
+def display_sample_grid(X_train, Y_train, num_samples=3):
+    """Display a grid of microscopy images and their associated masks."""
+    fig, axs = plt.subplots(2, num_samples, figsize=(12, 8))  
 
-    ax[0].imshow(X_train[idx])
-    ax[0].set_title('Original Image')
+    for i in range(num_samples):
+        idx = random.randint(0, len(X_train) - 1)
+        
+        # Display original image
+        axs[0, i].imshow(X_train[idx])
+        axs[0, i].set_title(f'Original Image {i+1}')
+        axs[0, i].axis('off')  # Turn off axis
 
-    ax[1].imshow(np.squeeze(Y_train[idx]))
-    ax[1].set_title('Mask Image')
+        # Display corresponding mask
+        axs[1, i].imshow(np.squeeze(Y_train[idx]))
+        axs[1, i].set_title(f'Mask Image {i+1}')
+        axs[1, i].axis('off')  # Turn off axis
 
     plt.tight_layout()
     plt.show()
+
 
