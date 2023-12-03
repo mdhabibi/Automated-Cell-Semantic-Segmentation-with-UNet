@@ -1,12 +1,12 @@
 """
 utils.py
 
-This script includes utility functions for the Cell-Segmentation-UNet project. 
-These functions provide general-purpose utilities that can be used in various parts of the project, 
-such as data visualization, performance evaluation, etc.
+This script includes utility function for the Cell-Segmentation-UNet project. 
+These function provides general-purpose utilities that can be used in various parts of the project, 
+such as data visualization.
 
-Functions:
-- display_random_sample: Displays a random sample from the dataset, including the original image and its mask.
+Function:
+- display_sample_grid: Displays the random samples from the dataset, including the original images and their masks.
 
 Author: Mahdi Habibi
 """
