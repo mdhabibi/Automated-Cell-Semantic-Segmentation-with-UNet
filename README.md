@@ -97,7 +97,6 @@ The figures present the model's performance across the training epochs:
 
 ## Tuned Model Results and Comparison
 
-### Overview of the Tuned UNet Model
 Following the initial success of the UNet model, I employed hyperparameter tuning to further refine the model's performance. The tuning process involved systematically searching for the optimal combination of hyperparameters using a **Keras Tuner**, a powerful hyperparameter optimization framework, to methodically explore and identify the best combination of hyperparameters.
 
 ### Performance Comparison: Untuned vs. Tuned U-Net Models
