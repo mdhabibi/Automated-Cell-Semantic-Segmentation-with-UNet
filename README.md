@@ -95,6 +95,23 @@ The figures present the model's performance across the training epochs:
 
 **Consistency Between Training and Validation Accuracy**: The two lines are close together throughout the training process, which again suggests good generalization and that overfitting is minimal.
 
+## Tuned Model Results and Comparison
+
+### Overview of the Tuned UNet Model
+Following the initial success of the UNet model, I employed hyperparameter tuning to further refine the model's performance. The tuning process involved systematically searching for the optimal combination of hyperparameters using a **Keras Tuner**, a powerful hyperparameter optimization framework, to methodically explore and identify the best combination of hyperparameters.
+
+### Performance Comparison: Untuned vs. Tuned U-Net Models
+The comparison between the untuned and tuned U-Net models yields the following insights:
+
+- **Training Loss**: The untuned model showed a marginally lower training loss at **0.0877** compared to the tuned model's **0.0885**. This indicates a very slight edge in fitting the training data for the untuned model.
+
+- **Validation Loss**: Notably, the untuned model outperformed with a validation loss of **0.0794**, against **0.0933** for the tuned model, suggesting better generalization on unseen data in the untuned model.
+
+- **Training Accuracy**: Both models achieved high training accuracy, with the tuned model at **96.61%** marginally surpassing the untuned model's **96.54%**.
+
+- **Validation Accuracy**: The untuned model exhibited a higher validation accuracy of **96.93%**, compared to **96.29%** for the tuned model, indicating slightly superior performance on the validation set.
+
+These findings underscore the complexity of hyperparameter tuning and its impact on model performance. They suggest that the initial parameters used in the untuned model were already quite effective for this specific task.
 
 ## Setting Up the Environment
 To run the notebooks in this repository, you can create a Conda environment with all the necessary dependencies using the provided **nucleus-segmentation-env.yml** file. Follow these steps:
