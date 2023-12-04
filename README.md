@@ -1,4 +1,4 @@
-# **Automated Nucleus Detection for Medical Discovery
+# Automated Nucleus Detection for Medical Discovery
 
 
 <div align="center">
@@ -20,8 +20,11 @@ This repository hosts a comprehensive solution to the challenge of automated nuc
 The approach is structured as follows:
 
 - **Data Preprocessing**: Standardizing the dataset for optimal model training.
+  
 - **Model Development**: Building a U-Net based convolutional neural network.
+  
 - **Training and Validation**: Rigorous testing and validation of the model's performance.
+  
 - **Evaluation**: Assessing the model against a set of unseen images to ensure reliability and accuracy.
 
 
@@ -65,7 +68,9 @@ For a randomly selected sample from the dataset, the original image, the ground 
 The results showcase the model's ability to segment nuclei within biomedical images. 
 
 **Original Image**: Displays the raw input image as received by the model, containing multiple nuclei that need to be segmented.
+
 **Ground Truth Mask**: Represents the expert-annotated mask that highlights the actual location of nuclei. These annotations serve as the standard against which the model's predictions are compared.
+
 **Predicted Mask**: Shows the model's output, indicating where it has identified nuclei. The color differentiation clearly distinguishes the segmented nuclei from the background.
 
 The overlap between the ground truth and predicted masks indicates successful nucleus detection, while any discrepancies point to areas where the model might need further tuning. Overall, the close visual alignment between the ground truth and predicted masks suggests that the model is performing well, capturing the majority of the nuclei with a high degree of accuracy.
@@ -79,10 +84,15 @@ The figures present the model's performance across the training epochs:
 </div>
 
 **Training Loss**: This shows a significant decrease, particularly in the initial epochs, indicating that the model is learning and improving its ability to segment the nuclei.
+
 **Validation Loss**: Initially follows the training loss closely but starts to plateau towards the later epochs, which is common as the model starts to converge.
+
 **Gap Between Training and Validation Loss**: It is relatively small, suggesting that the model isn't severely overfitting. However, there are slight fluctuations in validation loss, which could indicate some variance in the validation data that the model finds harder to generalize.
+
 **Training Accuracy**: Starts high and increases slightly over epochs, leveling off towards the end. This indicates that the model fits the training data well.
+
 **Validation Accuracy**: Mirrors the training accuracy closely and remains high, which is a good indicator that the model generalizes well to unseen data.
+
 **Consistency Between Training and Validation Accuracy**: The two lines are close together throughout the training process, which again suggests good generalization and that overfitting is minimal.
 
 
