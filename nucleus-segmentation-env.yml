@@ -1,0 +1,11 @@
+name: nucleus-segmentation-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10.12
+  - numpy=1.23.5
+  - matplotlib=3.7.1
+  - skimage=0.19.3
+  - tensorflow=2.14.0
+  - pip=23.1.2
