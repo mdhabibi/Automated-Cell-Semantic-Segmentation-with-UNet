@@ -110,6 +110,6 @@ In this project, I have successfully developed and trained a U-Net model capable
 
 
 ## Acknowledgments
-- I extend my gratitude to the organizers of the 2018 Data Science Bowl for providing a platform and dataset that sparked this exploration into medical image segmentation. I also thank the open-source community for the invaluable tools and frameworks that made this project possible.
+- I extend my gratitude to the organizers of the **2018 Data Science Bowl** for providing a platform and dataset that sparked this exploration into medical image segmentation. I also thank the open-source community for the invaluable tools and frameworks that made this project possible.
 
 
