@@ -62,7 +62,7 @@ The sample images showcase the diversity of cell appearances and highlight the c
 For a randomly selected sample from the dataset, the original image, the ground truth mask, and the predicted mask were displayed.
 
 <div align="center">
-  <img src="Images/rando_training_sample.png" width="800">
+  <img src="Images/random_training_sample.png" width="800">
 </div>
 
 The results showcase the model's ability to segment nuclei within biomedical images. 
