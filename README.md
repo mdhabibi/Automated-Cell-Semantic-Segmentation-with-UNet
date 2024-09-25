@@ -9,6 +9,9 @@
 
 ## Overview
 The **2018 Data Science Bowl** presented a significant challenge with profound implications for medical research: creating an algorithm to automate the detection of cell nuclei across diverse images. This task is more than an academic exercise; it's a vital step in speeding up research for a wide array of diseases, from common ailments like the cold to life-threatening conditions like cancer and heart disease.
+
+Accurate identification of nuclei is crucial for quantifying cellular characteristics, enabling large-scale analysis that would be infeasible manually.
+
 The nucleus of a cell holds its **DNA**, the fundamental genetic code guiding its functions. By automating the detection of nuclei, researchers can more rapidly understand cellular behaviors and reactions to treatments. This advancement holds the potential to revolutionize the pace of medical discoveries and drug development, reducing the time to market for new medications and therapies.
 
 
